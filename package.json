@@ -20,8 +20,5 @@
   "license": "MIT",
   "devDependencies": {
     "tape": "^4.6.3"
-  },
-  "dependencies": {
-    "is-pure-object": "^1.0.0"
   }
 }

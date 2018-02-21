@@ -1,3 +1,6 @@
+const OBJECT_CONSTRUCTORS = ['Function', 'Object']
+
+
 /**
 * @param {object} root - The object to walk
 * @param {function} fn - A function to call on each node
@@ -14,7 +17,7 @@ export default function walkObject(root, fn)
       ])
 
     // Value is an object, walk the keys of the object
-    if(value && value.constructor.name === 'Object')
+    if(value && OBJECT_CONSTRUCTORS.includes(value.constructor.name))
     {
       const entries = Object.entries(value)
 

@@ -25,8 +25,8 @@ module.exports = function walkObject(root, fn)
     }
 
     // We've reached a leaf node, call fn on the leaf with the location
-    await fn({value, location, isLeaf: true})
+    return await fn({value, location, isLeaf: true})
   }
 
-  walk(root)
+  return walk(root)
 }

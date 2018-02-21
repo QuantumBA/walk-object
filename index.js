@@ -2,7 +2,7 @@
 * @param {object} root - The object to walk
 * @param {function} fn - A function to call on each node
 */
-module.exports = function walkObject(root, fn)
+export default function walkObject(root, fn)
 {
   async function walk(value, location = [])
   {

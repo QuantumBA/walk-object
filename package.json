@@ -1,6 +1,6 @@
 {
-  "name": "walk-object",
-  "version": "4.0.0",
+  "name": "@foqum/walk-object",
+  "version": "0.0.1",
   "description": "Walk an object's keys",
   "main": "index.js",
   "scripts": {
